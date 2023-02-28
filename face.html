@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 0;
+    }
+    .face{
+        display: flex;
+        background-color: beige;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .left-eye{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        height: calc(25%);
+        width: calc(25%);
+        border-radius: 50%;
+        transform: translate(-10%,50%);
+    }
+    .right-eye{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        height: calc(25%);
+        width: calc(25%);
+        border-radius: 50%;
+        transform: translate(10%,50%);
+    }
+    .left-pupil{
+        display: flex;
+        background-color: black;
+        height: calc(25%);
+        width: calc(25%);
+        border-radius: 50%;
+        margin: 90px;
+    }
+    .right-pupil{
+        display: flex;
+        background-color: black;
+        height: calc(25%);
+        width: calc(25%);
+        border-radius: 50%;
+        margin: 90px;
+    }
+    .mouth{
+        display: flex;
+        background-color: black;
+        height: 50px;
+        width: 59px;
+        border-radius: 50%;
+        transform: translate(-1500%, 1100%);
+    }
+</style>
+<body>
+    <div class="face">
+        <div class="left-eye">
+            <div class="left-pupil"></div>
+        </div>
+        <div class="right-eye">
+            <div class="right-pupil"></div>
+        </div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>
