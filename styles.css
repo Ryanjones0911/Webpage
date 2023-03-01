@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -31,13 +32,14 @@ li:not(:hover){
     transition: transform .3s ease-in-out;
     
 }
+.menubar:hover{
+    width: 0;
+}
 .menu{
     display: flex;
     position: relative;
-    top: 5em;
-    right: -50em;
-    width: 25em;
-    position: relative;
+    top: -55%;
+    left: 25%;
     align-items: left;
 }
 .head{
@@ -60,14 +62,42 @@ li:not(:hover){
 body{
     background-image: url(pictures/background.jpg);
 }
-ul{
+.social-links{
     display: flex;
     position: absolute;
     top: 1em;
     right: 4em;
     list-style: none;
-    transform: scale(.7);
+    transform: scale(.4);
 }
-li{
+.social{
     padding: 1.5% 1.5% 1.5% 1.5%;
+}
+.top-menu{
+    background-color: green;
+}
+.logo{
+    display: flex;
+}
+.dropdown-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.menubar{
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+.name
+{
+    display: flex;
+    position: relative;
+    top: 2em;
+    left: 1em;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3em;
 }
